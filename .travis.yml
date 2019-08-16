@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "10"
+dist: trusty
+sudo: required
+branches:
+  only:
+    - master
+before_script:
+  - npm install -g @angular/cli
+  - npm install -g bootstrap@4.3.1"
+  - npm install -g jquery@3.4.1
+  - npm install -g popper.js@1.15.0
+script:
+  - ng lint
+  - npm run test-headless
+  - ng build --prod
