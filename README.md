@@ -5,7 +5,7 @@
 
 Ngx-Animated-Counter is a simple counter styled with custom themes from bootstrap.
 
-#####Table of Contents
+##### Table of Contents
 [Compatibility](#compatibility)
 
 [Dependencies](#dependencies)
