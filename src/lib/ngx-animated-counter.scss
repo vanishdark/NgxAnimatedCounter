@@ -1,0 +1,133 @@
+// VARIABLES
+$counter-max-width: 350px;
+$counter-font-size: .875rem;
+$counter-padding-x: .75rem;
+$counter-padding-y: 0.25rem;
+
+// COLORS
+$background-color: rgba(255, 255, 255, 0.85);
+$box-shadow-color: rgba(0, 0, 0, 0.24);
+
+// Clump Theme
+$color-clump-lighter: #F2F2F2;
+$color-clump-light: #299CB4;
+$color-clump-medium: #639AA6;
+$color-clump-Dark: #366273;
+$color-clump-Darker: #1E3340;
+// Cantaloupe Theme
+$color-cantaloupe-lighter: #FFFFFF;
+$color-cantaloupe-light: #C4C4C4;
+$color-cantaloupe-medium: #373737;
+$color-cantaloupe-dark: #FF6B33;
+$color-cantaloupe-darker: #A72238;
+
+// Kind Theme
+$color-kind-lighter: #F6F3F7;
+$color-kind-light: #F5CBDE;
+$color-kind-medium: #EEB9D3;
+$color-kind-dark: #E59CC4;
+$color-kind-darker: #EB81BD;
+
+// Grass Theme
+$color-grass-lighter: #F2F2F2;
+$color-grass-light: #C6E070;
+$color-grass-medium: #91C46C;
+$color-grass-dark: #287D7D;
+$color-grass-darker: #1C344C;
+
+// MEDIA
+@media (min-width: 768px) {
+  .raw-col {
+    flex: 0 0 33%;
+    max-width: 350px;
+  }
+}
+
+// BODY
+.raw {
+  display: flex;
+  width: auto;
+  max-width: 1500px;
+  flex-wrap: wrap;
+}
+
+.raw.center {
+  justify-content: center;
+}
+
+.raw-col {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+
+// CARD
+.card-counter {
+  max-width: $counter-max-width;
+  overflow: hidden;
+  background-color: $background-color;
+  background-clip: padding-box;
+  box-shadow: 0 0.25rem 0.75rem $box-shadow-color;
+  backdrop-filter: blur(10px);
+  font-size: $counter-font-size;
+  opacity: 1;
+}
+
+.card-counter-body {
+  padding: $counter-padding-x;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center !important;
+}
+
+.card-counter-body.cantaloupe {
+  background-color: $color-cantaloupe-lighter;
+  color: $color-cantaloupe-dark;
+}
+
+.card-counter-body.clump {
+  background-color: $color-clump-lighter;
+  color: $color-clump-light;
+}
+
+.card-counter-body.kind {
+  background-color: $color-kind-lighter;
+  color: $color-kind-darker;
+}
+
+.card-counter-body.grass {
+  background-color: $color-grass-lighter;
+  color: $color-grass-medium;
+}
+
+.card-counter-footer {
+  align-items: center;
+  padding: $counter-padding-y $counter-padding-x;
+  background-clip: padding-box;
+  text-align: center !important;
+  text-transform: uppercase;
+}
+
+.card-counter-footer.cantaloupe {
+  background-color: $color-cantaloupe-lighter;
+  color: $color-cantaloupe-medium;
+  border-bottom: 4px solid $color-cantaloupe-dark;
+}
+
+.card-counter-footer.clump {
+  background-color: $color-clump-lighter;
+  color: $color-clump-Darker;
+  border-bottom: 4px solid $color-clump-light;
+}
+
+.card-counter-footer.kind {
+  background-color: $color-kind-lighter;
+  border-bottom: 4px solid $color-kind-darker;
+}
+
+.card-counter-footer.grass {
+  background-color: $color-grass-lighter;
+  color: $color-grass-darker;
+  border-bottom: 4px solid $color-grass-medium;
+}

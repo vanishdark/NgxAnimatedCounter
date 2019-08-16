@@ -1,0 +1,25 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "only-arrow-functions": false,
+    "max-line-length": [true, 800],
+    "directive-selector": [
+      true,
+      "attribute",
+      "ngxACounter",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "ngx-a-counter",
+      "kebab-case"
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ]
+  }
+}

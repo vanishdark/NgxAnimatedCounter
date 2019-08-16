@@ -1,0 +1,19 @@
+<div class="raw" [ngClass]="{'center' : isToCenter}">
+  <div *ngFor="let item of list" class="raw-col">
+    <div class="card-counter">
+      <div class="card-counter-body {{color}}">
+        <div (countChange)="item.result = $event"
+             (countEnd)="onCountEndFinish($event)"
+             [countFrom]="0"
+             [countTo]="item.value"
+             [duration]="duration"
+             [step]="step" ngxACounter>
+          {{item.result}}
+        </div>
+      </div>
+      <div class="card-counter-footer {{color}}">
+        {{item.name}}
+      </div>
+    </div>
+  </div>
+</div>
